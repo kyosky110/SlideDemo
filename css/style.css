@@ -1,0 +1,19 @@
+
+.slideWindow{
+    width: 300px;
+    overflow: hidden;
+}
+
+.slideImgs{
+    display: flex;
+    align-items:flex-start;
+    transition: all 0.5s;
+}
+
+.slideImgs > img{
+    vertical-align: top;
+}
+
+.red{
+    color: red;
+}
