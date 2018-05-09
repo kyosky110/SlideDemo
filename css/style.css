@@ -2,18 +2,43 @@
 .slideWindow{
     width: 300px;
     overflow: hidden;
+    margin: 20px auto;
+    height: 200px;
+}
+
+.sildeButtions{
+    width: 300px;
+    margin: 20px auto;
 }
 
 .slideImgs{
-    display: flex;
-    align-items:flex-start;
-    transition: all 0.5s;
+    position: relative;
 }
 
 .slideImgs > img{
-    vertical-align: top;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.red{
+
+.slideImgs > img.currentPage{
+    transform: translateX(0);
+    left: 0;
+    z-index: 1;
+}
+
+.slideImgs > img.leavePage{
+    transform: translateX(-100%);
+    z-index: 0;
+}
+
+.slideImgs > img.enterPage{
+    transform: translateX(100%);
+    z-index: 0;
+}
+
+.buttonActive{
     color: red;
 }
