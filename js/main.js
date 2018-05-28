@@ -9,10 +9,13 @@ function meunItemListener() {
         $('li.menuItem').removeClass('act').addClass('inact');
 			$(this).parent().addClass('act');
         var index = $(this).parent().prevAll('.menuItem').length
-        var distance = index * - width
+        console.log(index)
+        
+        var distance = index * (- width)
         $('#slideImgs').css({
             transform: 'translate(' + distance + 'px)'
         })
+        console.log(distance)
         return false
     })
 }

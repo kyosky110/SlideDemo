@@ -38,9 +38,13 @@ li{
     border:1px solid white;
 	/* The width of the gallery */
 	width:920px;
-	overflow:hidden;
+    overflow:hidden;
+    
 }
 
+/* .slideImgs{
+    height: 400px;
+} */
 .slideImgs{
     display: flex;
     align-items:flex-start;
@@ -48,11 +52,16 @@ li{
 }
 
 .slideImgs > img{
-    vertical-align: top;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
 }
 
-.red{
-    color: red;
+
+.slideImgs > img.currentPage{
+    transform: translateX(0);
+    left: 0;
+    z-index: 1;
 }
 
 #menu ul li{
