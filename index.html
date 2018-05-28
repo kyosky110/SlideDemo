@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slide</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div id="slideWindow" class="slideWindow">
-        <div id="slideImgs" class="slideImgs">
-            <img src="./img/1.png" alt="图片1" width="300" height="200">
-            <img src="./img/2.png" alt="图片2" width="300" height="200">
-            <img src="./img/3.png" alt="图片3" width="300" height="200">
-            <img src="./img/4.png" alt="图片4" width="300" height="200">
+    <div id="main">
+            <h1>Apple-like Gallery<br /><b>Slideshow</b></h1>
+  
+            <h2>View the <a href="https://tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/" target="_blank">original tutorial &raquo;</a></h2>
+
+        <div id="slideWindow" class="slideWindow">
+            <div id="slideImgs" class="slideImgs">
+                <img src="./img/macbook.jpg" alt="图片1" width="920" height="400">
+                <img src="./img/iphone.jpg" alt="图片2" width="920" height="400">
+                <img src="./img/imac.jpg" alt="图片3" width="920" height="400">
+                <img src="./img/info.jpg" alt="图片4" width="920" height="400">
+            </div>
+            <div id="menu">
+                    <ul>
+                        <li class="fbar">&nbsp;</li>
+                        <li class="menuItem">
+                            <a href="">
+                                <img src="./img/thumb_macbook.png" alt="thumb_macbook">
+                            </a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="">
+                                <img src="./img/thumb_iphone.png" alt="thumb_iphone">
+                            </a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="">
+                                <img src="./img/thumb_imac.png" alt="humb_imac">
+                            </a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="">
+                                <img src="./img/thumb_about.png" alt="thumb_about">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div id="sildeButtions" class="sildeButtions">
+            <button >第1张</button>
+            <button>第2张</button>
+            <button>第3张</button>
+            <button>第4张</button>
         </div>
     </div>
-    <div id="sildeButtions" class="sildeButtions">
-        <button>第1张</button>
-        <button>第2张</button>
-        <button>第3张</button>
-        <button>第4张</button>
-    </div>
+    <p>This is a tutorialzine demo. View the <a href="https://tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/" target="_blank">original tutorial</a> to read and download the source files.</p>
+	<p style="font-size:10px;">The gallery features artwork from <a href="https://rambocore.deviantart.com/" target="_blank">rambocre</a>, <a href="https://pickupjojo.deviantart.com/" target="_blank">pickupjojo</a> and <a href="https://codenamebender.deviantart.com/" target="_blank">codenamebender</a></p>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
